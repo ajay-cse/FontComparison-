@@ -1,0 +1,348 @@
+
+:root {
+  --bg-color: #fff;
+  --bg-img: url('light.jpg');
+  --text-color: rgba(17, 23, 73, 0.747);
+
+  --light-btn-border:3px solid red;
+  --dark-btn-border:3px solid rgba(162, 0, 255, 0);
+  --pink-btn-border:3px solid rgba(162, 0, 255, 0);
+
+}
+
+body.dark {
+  --bg-color: rgb(24, 24, 24);
+  --bg-img: none;
+  --text-color: rgb(121, 123, 141);
+
+  --light-btn-border:3px solid rgba(162, 0, 255, 0);
+  --light-btn-border:3px solid rgba(162, 0, 255, 0);
+  --dark-btn-border:3px solid red;
+}
+
+body.pink {
+    --bg-color: #c2cbb8;
+    --bg-img: none;
+    --text-color: #454545;
+  
+    --light-btn-border:3px solid rgba(162, 0, 255, 0);
+    --dark-btn-border:3px solid rgba(162, 0, 255, 0);
+    --pink-btn-border:3px solid red;
+  }
+  
+
+
+.theme-button{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    background-color: rgba(93, 91, 91, 0.233);
+}
+
+.light-btn{
+    border: var(--light-btn-border);
+}
+
+.dark-btn{
+    border: var(--dark-btn-border);
+}
+
+.pink-btn{
+    border: var(--pink-btn-border);
+}
+/* ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Arial','Helvetica','Times New Roman';
+    background-color: var(--bg-color);
+    background-image: var(--bg-img);
+    color:var(--text-color);
+  }
+
+
+
+  section {
+    width: 100%;
+    padding: 0 0%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    height: 100vh;
+  }
+
+  .menue{
+    padding-left: 5px;
+    position:fixed;
+    padding-top: 20px;
+   }   
+
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 40px;
+  }
+
+  .typ1 { grid-area: t1;}
+  .typ2 { grid-area: t2;}
+  .typ3 { grid-area: t3;}
+  .typ4 { grid-area: t4;}
+  .typ5 { grid-area: t5;}
+  .typ6 { grid-area: t6;}
+  .typ7 { grid-area: t7;}
+  .typ8 { grid-area: t8;}
+  .typ9 { grid-area: t9;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    't1 t2 t3'
+    't4 t5 t6';
+    grid-gap: 22px;
+    padding: 30px;
+}
+
+.type-item{
+    padding: 10px;
+}
+
+.type-item h1{
+    font-size: 20px;
+    color: rgba(0, 11, 109, 0.65);
+}
+
+.hr-line{
+    border: 1px solid #92929244;
+}
+.short-para{
+    font-size: 17px;
+    line-height: 1.6em;
+    letter-spacing: 0.1px;
+    word-spacing: 2px;
+}
+
+.typeface-name{
+    font-size: 30px;
+    color: rgba(0, 11, 109, 0.65);
+}
+.long-para{
+    font-size: 19px;
+    line-height: 1.7em;
+    letter-spacing: 0.1px;
+    word-spacing: 2px;
+}
+/* ------------------------------------------ */
+
+.Space-Mono{
+    font-family: 'Space Mono';
+    font-weight: 500;
+}
+
+
+
+/* ------------------------------------------ */
+
+.Quicksand{
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+
+/* ------------------------------------------ */
+
+.Hahmlet{
+    font-family: 'Hahmlet';
+    font-weight: 500;
+}
+
+/* ------------------------------------------ */
+
+.Merriweather{
+    font-family: 'Merriweather';
+    font-weight: 500;
+}
+/* ------------------------------------------ */
+
+.Poppins{
+    font-family: 'Poppins';
+    font-weight: 500;
+
+}
+
+/* ------------------------------------------ */
+
+.Inter{
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+/* ------------------------------------------ */
+
+
+
+.content-area{
+    max-width: 1000px;
+    text-align: left;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+            /* body {
+                background-color: red;
+            } */
+            .grid-container{
+                display: grid;
+                grid-template-areas:
+                't1'
+                't2'
+                't3'
+                't4'
+                't5'
+                't6';
+                grid-gap: 5px;
+                padding: 5px;
+            }
+
+            .content {
+                padding: 10px 10px;
+              }
+
+              .type-item h1{
+                font-size: 20px;
+                color: rgba(0, 11, 109, 0.65);
+            }
+            
+            .short-para{
+                font-size: 14px;
+                line-height: 1.6em;
+                letter-spacing: 0.1px;
+                word-spacing: 2px;
+            }
+            
+            .typeface-name{
+                font-size: 30px;
+                color: rgba(0, 11, 109, 0.65);
+            }
+            .long-para{
+                font-size: 16px;
+                line-height: 1.7em;
+                letter-spacing: 0.1px;
+                word-spacing: 2px;
+            }
+
+        }
+          
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 767px) {
+            /* body {
+                background-color: yellow;
+            } */
+            .grid-container{
+                display: grid;
+                grid-template-areas:
+                't1'
+                't2'
+                't3'
+                't4'
+                't5'
+                't6';
+                grid-gap: 10px;
+                padding: 10px;
+            }
+        }
+          
+        /* Media Query for Tablets Ipads portrait mode */
+        @media (min-width: 768px) and (max-width: 1024px){
+            /* body {
+                background-color: blue;
+            } */
+
+            .grid-container{
+                display: grid;
+                grid-template-areas:
+                't1 t2'
+                't3 t4'
+                't5 t6';
+                grid-gap: 22px;
+                padding: 30px;
+            }
+
+        }
+          
+        /* Media Query for Laptops and Desktops */
+        @media (min-width: 1025px) and (max-width: 1280px){
+            /* body {
+                background-color: green;
+            } */
+            .grid-container{
+                display: grid;
+                grid-template-areas:
+                't1 t2'
+                't3 t4'
+                't5 t6';
+                grid-gap: 22px;
+                padding: 30px;
+            }
+        }
+          
+
+
+
+
+
+
